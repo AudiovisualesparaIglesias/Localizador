@@ -1,0 +1,480 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+h1{ font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+button{
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0);
+  box-shadow: 2px 2px 10px rgba(0,0,0,5);
+  color:white;
+  background-color: blueviolet;
+}
+button:hover{
+  background-color: rgb(1001,33,165);
+}
+
+.container{
+  max-width: 1400px;
+  margin: auto;
+}
+
+.color-acento{ color:blue;}
+
+
+
+.collapsed{
+  display: none;
+
+}
+
+#hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url("imagenes/Audiovisuales\ portada.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+#hero h1{
+  color: white;
+}
+
+#hero button{
+  font-size: 1.75em;
+}
+
+#somos-proya .container{
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#nuestros-cursos{
+  background-color: rgb(30,30,30);
+  color:white;
+  text-align: center;
+
+}
+
+#nuestros-cursos .container{
+  padding: 100px 0px;
+
+
+}
+
+#nuestros-cursos h2{
+  margin-top: 0;
+}
+
+#nuestros-cursos p{
+  display: none;
+}
+
+#nuestros-cursos .carta{
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+
+
+}
+
+#nuestros-cursos h2{
+  margin: 0;
+  font-size: 3.2em;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+#caracteristicas .container{
+  text-align: center;
+}
+
+#caracteristicas li{
+  margin: 16px 0px;
+  font-weight: bold;
+}
+
+#final{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color:white;
+  height: 80vh;
+
+}
+
+#final h2{
+  font-size: 9vw;
+}
+
+#final button{
+  font-size: 5vw;
+}
+
+footer{
+  background-color: rgb(230,230,230);
+}
+
+footer p{
+  margin:0;
+  padding: 12px;
+  color:rgb(100,100,100);
+
+}
+
+footer .container{
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#nuestros-cursos .carta{
+  padding: 12px;
+  
+}
+
+.carta:first-child{
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url("imagenes/camara-imagen.jpg");
+  
+
+}
+
+.carta:nth-child(2){
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url("imagenes/cursos-3.jpg");
+  
+
+}
+
+.carta:nth-child(3){
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url("imagenes/foto-curso.jpg");
+  
+}
+
+nav{
+  
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 15vh;
+  color: white;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url("imagenes/audiovisual-cursos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.logo{
+  min-width: 300px;
+  width: 100px;
+  height: auto;
+  overflow: hidden;
+  text-align: left;
+}
+
+.logo img{
+  width: 150%;
+  height: auto;
+  display: block;
+  text-align: left;
+  display: flex;
+  
+}
+   
+
+
+nav .mobile{
+  display: none;
+  
+ 
+}
+
+nav .mobile .header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px; 
+ 
+}
+
+nav .mobile .header .more button{
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  background-color:rgba(244, 168, 28, 0.718);
+}
+
+
+
+nav .logo{
+  min-width: 100px;
+
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 30px;
+  
+}
+
+nav a:hover{
+  color:white;
+  background-color:rgba(244, 168, 28, 0.718);
+}
+
+nav .desktop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pad: 30px 20px;
+}
+
+nav .desktop .primary,
+nav .desktop .secondary{
+  display: flex;
+}
+
+nav .desktop .secondary.mini{
+  display: none;
+}
+
+ @media screen and (max-width: 1048px) {
+  
+  nav .logo{
+    min-width: 100px;
+  }
+
+  nav .secondary.full{
+    display: none;
+
+  }
+
+  nav .secondary.mini{
+    display: block !important;
+
+  }
+
+  nav .secondary.mini .submenu{
+    background-color: black;
+    position: absolute;
+    display: none;
+    width: 200px;
+    right: 0;
+  }
+
+  nav .secondary.mini:hover .submenu{
+    display: block;
+  }
+  
+ }
+
+ @media screen and (max-width: 500px){
+  nav .desktop{
+    display: none;
+    
+
+  }
+  nav .mobile{
+    display: block;
+    text-align: center;
+    
+  }
+
+
+  .logo{
+    max-width: 100%;
+   position: relative;
+   top: 10px;
+   left: -20px;
+
+
+  }
+
+ }
+
+ @media (min-width: 850px){
+
+
+
+  #somos-proya .container{
+    display: flex;
+    justify-content: space-evenly;
+  
+  }
+  
+  #somos-proya .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #somos-proya h2{
+    margin-top: 0px;
+  }
+  
+  
+  
+  #somos-proya .img-container{
+    background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/camara-imagen.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width:700px ;
+   
+  }
+
+  #nuestros-cursos .programas{
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  #nuestros-cursos p{
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  #nuestros-cursos h3{
+    margin-top: 0;
+  }
+  
+  #nuestros-cursos .carta{
+    padding: 12px;
+    
+  }
+
+  .carta:first-child{
+    background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/camara-imagen.jpg");
+    
+  
+  }
+  
+  .carta:nth-child(2){
+    background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/cursos-3.jpg");
+    
+  
+  }
+  
+  .carta:nth-child(3){
+    background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/foto-curso.jpg");
+    
+  }
+
+  #caracteristicas{
+    background-image: url(imagenes/Audiovisuales\ portada.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+    background-position: calc(100vw - 400px) 500px;
+
+
+  }
+
+  #caracteristicas .container{
+    text-align: initial;
+  }
+
+  #caracteristicas ul{
+    margin-left: 100px;
+  }
+
+  #final h2{
+    font-size: 5em;
+  }
+
+  #final button{
+    font-size: 2em;
+  }
+
+  footer .container{
+    justify-content: flex-end;
+  }
+ }
+ @media (min-width: 1200px){
+  #caracteristicas{
+    background-position: calc(100vw - 800px) ;
+  }
+ }
+  
+ 
